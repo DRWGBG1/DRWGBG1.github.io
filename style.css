@@ -1,3 +1,57 @@
 h1 {
-    Color: red;
+    Color: rgb(42, 90, 211);
 }
+style> 
+.container-1{
+    display:flex;
+    /*
+    align-items:flex-start;
+    align-items:flex-end;
+    align-items:center;
+    */
+    flex-direction:column;
+}
+.container-2{
+    display:flex
+}
+.container-1 div, .container-2 div{
+    border: 1px; 
+    padding: 10px;
+    max-width: 850;
+}
+.box-1{
+    flex:2;
+    order:1;
+
+}
+.box-2{
+    flex:2;
+    order:2;
+}
+.container-2-box{
+    width: 30%;
+}
+</style>
+<div class= "container-1">
+<div class="box-1"
+<h3>About me</h3>
+<p>Hi! My name is Danny Waldron I am a <strong>senior</strong> studying simulation design with a minor in Business.
+I was originally a business major but decided it was not for me so I changed. I do not have any experience in
+web development besides running a website for a local shelter in Columbia but I did not learn much. It was
+mostly just updating events and requesting clothing for drives. Not much coding experience was necessary. <br />
+I expect to have a much better understanding of how to navigate code and run a website when I finish the course.
+I hope to use what I learn in this course in my future job which I hope is in design. My favorite hobby is
+playing working out. I do not have much free time but when I do I mainly hang out with my friends in downtown
+Columbia or play video games.</p>
+</div>
+<div class="box-2"
+<h3>nav<h3>
+<div class= "container-2">
+<div class="box-2"
+<h3>Education</h3>
+<p>I am a Simulations design major with a minor in business. I am currently a senior but
+changed my major recently. I am pursuing my bachelor's degree currently. I expect to
+graduate from the University of Missouri in 2024. After school, I plan to work a job
+involving design. I attended high school in Chicago which is a reason I am in design due
+to the art and massive buildings.</p>
+</div>
