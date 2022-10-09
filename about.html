@@ -1,48 +1,155 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-</html>
+<head>
 
-</html><!-- -->
-<meta charset="utf-8">
-<link rel="Stylesheet" href="nav.css"
-<link rel="Stylesheet" href="style.css"
-<title>About.HTML</title>
+    </html><!-- -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NAVBAR</title>
+    <link rel="Stylesheet" href="nav.css"
+    <link rel="Stylesheet" href="style.css"
+    <!-- IE6-8 support of HTML5 elements --> <!--[if lt IE 9]>
+     <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+     <style>
+        body{
+        Background:rgb(231, 197, 227);
+         color:rgb(15, 105, 230)}
+        </style>
 </head>
-
 <body>
-    <header>
-    <H1>Danny Waldron</H1>
-    </header>
-    <ul class="nav">
-        <li><a href="index.html">Home</a>
-        <li><a href="about.html">About</a>
-        <li><a href="reflection.html">Reflection</a>
-        <li><a href="#">Projects and experience</a>
-        <li><a href="#">Contact
-        </ul>
-    </nav>
-    <main>
-    <h3>About Me</h3>
-    <p>Hi! My name is Danny Waldron I am a <strong>senior</strong> studying simulation design with a minor in Business.
-        I was originally a business major but decided it was not for me so I changed. I do not have any experience in
-        web development besides running a website for a local shelter in Columbia but I did not learn much. It was
-        mostly just updating events and requesting clothing for drives. Not much coding experience was necessary. <br />
-        I expect to have a much better understanding of how to navigate code and run a website when I finish the course.
-        I hope to use what I learn in this course in my future job which I hope is in design. My favorite hobby is
-        playing working out. I do not have much free time but when I do I mainly hang out with my friends in downtown
-        Columbia or play video games.</p>
-    </main>
-    <blockquote>“In <em>three</em> words I can sum up everything I’ve <em>learned</em> in life: It goes on.”
-    </blockquote>
-    <H3>Education</H3>
-    <p>I am a Simulations design major with a minor in business. I am currently a senior but
-        changed my major recently. I am pursuing my bachelor's degree currently. I expect to
-        graduate from the University of Missouri in 2024. After school, I plan to work a job
-        involving design. I attended high school in Chicago which is a reason I am in design due
-        to the art and massive buildings.</p>
-        <a href="Resume1.pdf"> My resume</a>
-        <footer>
+<nav id="nav">
+<ul id="navigation">
+<li><a href="index.html" class="First">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="reflection.html">Reflection</a></li>
+<li><a href="project.html">Projects and experience &raquo;</a>
+<ul>
+<li><a href="#">Assignments</a></li>
+<li><a href="#">What I learned</a></li>
+<li><a href="#">Photos</a></li>
+<li><a href="#">Contact</a>
+</li>
+</ul>
+</nav>
+<h1>About Me</h1>
+<link rel="preconnect" href="https://fonts.gstatic.com"
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap" rel="stylesheet">
+<style>
+    body{
+    font-family: 'Raleway', sans-serif;
+    }
+    </style>
+    
 </body>
+<!DOCTYPE html>
+<style>
+* {
+box-sizing: border-box;
+}
 
+/* Style the header */
+.header {
+grid-area: header;
+background-color:rgb(231, 197, 227);
+padding: 10px;
+text-align: center;
+color: rgb(15, 105, 230);
+font-size: 35px;
+}
+
+/* The grid container */
+.grid-container {
+display: grid;
+color: rgb(15, 105, 230);
+grid-template-areas: 
+'header header header header header header' 
+'left left middle middle right right' 
+'footer footer footer footer footer footer'; 
+/* grid-column-gap: 12px; - if you want gap between the columns */
+} 
+
+.left,
+.middle,
+.right {
+padding: 2px;
+height: 800px; /* Should be removed. Only for demonstration */
+width: 500px;
+}
+
+/* Style the left column */
+.left {
+grid-area: left;
+color: rgb(15, 105, 230);
+}
+
+/* Style the middle column */
+.middle {
+grid-area: middle;
+color:rgb(15, 105, 230);
+font-size: 18px;
+}
+
+/* Style the right column */
+.right {
+grid-area: right;
+color:rgb(15, 105, 230);
+font-size: 18px;
+}
+
+/* Style the footer */
+.footer {
+grid-area: footer;
+background-color:rgb(231, 197, 227);
+color: black;
+padding: 1px;
+text-align: left;
+font-size: 20px;
+background-image:url(GreatWall.jpeg) ;
+background-repeat: none;
+}
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+<div class="header">
+<h2>Danny Waldron</h2>
+</div>
+
+<div class="left" style="background-color:rgb(231, 197, 227);"><p> <p> <img class="img-Me" src="IMG_5208.jpeg" width="300" height="300"></p</p><p>I quote that stands out to me by Robert Frost is “In three 
+    words I can sum up everything I’ve learned in life: It goes on.” </p></div>
+<div class="middle" style="background-color:rgb(231, 197, 227);">-
+    <h3>Education</h3>
+<p> I am a Simulations design major with a minor in business.</p> <p>I am currently a senior but
+    changed my major recently.</p> <p>I am pursuing my bachelor's degree currently. I expect to
+    graduate from the University of Missouri in 2024.</p> <p>After school, I plan to work a job
+    involving design.</p> <p>I attended high school in Chicago which is a reason I am in design due
+    to the art and massive buildings.</p>
+    <p><img class="img-Mizzou" src="Mizzoutiger.png" width="600" height="400"></p>
+</div>  
+<div class="right" style="background-color:rgb(231, 197, 227);">
+<p> I expect to have a much better understanding of how to navigate code and run a website when I finish the course.</p>
+<p>I hope to use what I learn in this course in my future job which I hope is in design.</p> <p>My favorite hobby is
+    working out.</p> <p>I do not have much free time but when I do I mainly hang out with my friends in downtown
+Columbia or play video games.</p> 
+<p><a href="Resume1.pdf"> My resume</a>
+    <iframe width="320" height="230" src="https://www.youtube.com/embed/lgBE45XafuM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+</div>
+
+<div class="footer"> 
+<p>Contact </p>
+<p>Email:dwaldron39@gmail.com</p>
+<p>Number:6309087342</p>
+ <p>Help</p>
+</div>
+</div>
+
+</body>
 </html>
+
+</body>
+</html>
+    
