@@ -228,7 +228,16 @@ ul#navigation ul li a {
   margin:0 auto;
   width:10px;
 }
-
+.img-Colosseum{
+  width: -80px;
+  height: -80px;
+  background-image:url(Colosseum.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.img-Me{
+  
+}
 
 
 
