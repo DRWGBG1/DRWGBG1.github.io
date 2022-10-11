@@ -36,9 +36,7 @@ padding: 20px;
 color: rgb(15, 105, 230);
 display:block;
   }
-header .navbar ul li a:hover{
 
-}
 /* Style the footer */
  .footer {
    grid-area: footer;
