@@ -1,76 +1,105 @@
-style>
-* {box-sizing:border-box
-}
-
 body{
-  font-family: 'Raleway', sans-serif;
-  }
-  H1{
-    Background:rgb(231, 197, 227);
-    padding:20px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
-    } 
-    h2{
-      Background:rgb(231, 197, 227);
-      padding:20px;
-      border-style: solid;
-      border-width: 2px;
-      border-color: black;
-      } 
-      p{
-        Background:none;
-        padding: 15px;
-        border-style: solid;
-        border-width: 1px;
-        border-color: black;
-        } 
-        
-/* Style the header */
-.header{
-  grid-area: header;
-  background-color:rgb(231, 197, 227);
-  padding: 10px;
-  text-align: center;
-  color: rgb(15, 105, 230);
-  font-size: 35px;
-  overflow: hidden;
-}
-/* Style the footer */
-.footer {
-  grid-area: footer;
-  background-color:rgb(231, 197, 227);
-  color: black;
-  padding: 10px;
-  text-align: left;
-  font-size: 15px;
-  background-image:url(GreatWall.jpeg) ;
-  background-repeat: none;
-  }
+  Background:rgb(231, 197, 227);
+   color:rgb(15, 105, 230)}
+         
+ 
+ body{
+     font-family: 'Raleway', sans-serif;
+     }
+   
+ * {
+ box-sizing: border-box;
+ }
+ H1{
+   Background:rgb(231, 197, 227);
+   padding:20px;
+   border-style: solid;
+   border-width: 2px;
+   } 
+   h2{
+     Background:rgb(231, 197, 227);
+     padding:20px;
+     border-style: solid;
+     border-width: 2px;
+     border-color: black;
+     } 
+     p{
+       Background:none;
+       padding: 15px;
+       border-style: solid;
+       border-width: 1px;
+       border-color: black;
+       } 
+     
+ 
+ /* Style the header */
+ .header {
+ grid-area: header;
+ background-color:rgb(231, 197, 227);
+ padding: 10px;
+ text-align: center;
+ color: rgb(15, 105, 230);
+ font-size: 35px;
+ }
+ 
+ /* The grid container */
+ .grid-container {
+ display: grid;
+ color: rgb(15, 105, 230);
+ grid-template-areas: 
+ 'header header header header header header' 
+ 'left left middle middle right right' 
+ 'footer footer footer footer footer footer'; 
+ /* grid-column-gap: 12px; - if you want gap between the columns */
+ } 
+ 
+ .left,
+ .middle,
+ .right {
+ padding: 2px;
+ height: 800px; /* Should be removed. Only for demonstration */
+ width: 500px;
+ }
+ 
+ /* Style the left column */
+ .left {
+ grid-area: left;
+ color: rgb(15, 105, 230);
+ position: relative;
+ text-decoration-color: black;
+ }
+ 
+ /* Style the middle column */
+ .middle {
+ grid-area: middle;
+ color:rgb(15, 105, 230);
+ font-size: 18px;
+ text-align: center;
+ }
+ 
+ /* Style the right column */
+ .right {
+ grid-area: right;
+ color:rgb(15, 105, 230);
+ font-size: 18px;
+ text-align: right;
+ }
+ 
+ /* Style the footer */
+ .footer {
+ grid-area: footer;
+ background-color:rgb(231, 197, 227);
+ color: black;
+ padding: 10px;
+ text-align: left;
+ font-size: 15px;
+ background-image:url(GreatWall.jpeg) ;
+ background-repeat: none;
+ transform: scale(30deg);
+ }
+ 
 
-/* Style the topnav links */
-.topnav a {
-  float: center;
-  display:block;
-  color: #c592c3;
-  text-align: left;
-  padding: 20px;
-  text-decoration: none;
-}
 
-/* Change color on hover */
-.topnav a:hover {
-  background-color: rgb(159, 104, 156);
-  color: rgb(52, 55, 204);
-}
-
-/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-}
+ 
 
 
