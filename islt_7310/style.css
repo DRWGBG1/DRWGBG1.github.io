@@ -17,17 +17,6 @@
   padding: 14px 16px;
   text-decoration: none;
 }
- /* Style the footer */
- .footer {
-  grid-area: footer;
-  background-color:rgb(231, 197, 227);
-  color: black;
-  padding: 10px;
-  text-align: left;
-  font-size: 15px;
-  background-image:url(GreatWall.jpeg) ;
-  background-repeat: none;
-  }
 
 /* Change color on hover */
 .topnav a:hover {
@@ -88,6 +77,19 @@
  text-align: center;
  color: rgb(15, 105, 230);
  font-size: 35px;
+ }
+ 
+ 
+ /* Style the footer */
+ .footer {
+ grid-area: footer;
+ background-color:rgb(231, 197, 227);
+ color: black;
+ padding: 10px;
+ text-align: left;
+ font-size: 15px;
+ background-image:url(GreatWall.jpeg) ;
+ background-repeat: none;
  }
  
  @media only screen and ( max-width: 62.5em ) /* 1000 */ {
